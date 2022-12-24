@@ -32,7 +32,7 @@ const Signup = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const response = await fetch(
-      "https://tranquil-forest-39861.herokuapp.com/api/auth",
+      "https://chrome-note-backend-vercel.vercel.app/api/auth",
       {
         method: "POST",
         headers: {

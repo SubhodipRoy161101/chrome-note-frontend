@@ -33,8 +33,9 @@ const Login = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     const response = await fetch(
-      "https://tranquil-forest-39861.herokuapp.com/api/auth/login",
+      "https://chrome-note-backend-vercel.vercel.app/api/auth/login",
       {
+        mode: "no-cors",
         method: "POST",
         headers: {
           "Content-Type": "application/json",
