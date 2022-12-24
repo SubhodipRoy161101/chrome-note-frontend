@@ -35,7 +35,6 @@ const Login = () => {
     const response = await fetch(
       "https://chrome-note-backend-vercel.vercel.app/api/auth/login",
       {
-        mode: "no-cors",
         method: "POST",
         headers: {
           "Content-Type": "application/json",
