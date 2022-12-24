@@ -11,6 +11,11 @@ const Logout = () => {
     navigate("/");
     setValue("/");
   };
+
+  const backHome = () => {
+    navigate("/");
+    setValue("/");
+  };
   let navigate = useNavigate();
   return (
     <div>
@@ -36,7 +41,12 @@ const Logout = () => {
             </Button>
           </Grid>
           <Grid item xs={6}>
-            <Button variant="contained" sx={{ width: 150 }} color="error">
+            <Button
+              variant="contained"
+              sx={{ width: 150 }}
+              color="error"
+              onClick={backHome}
+            >
               No
             </Button>
           </Grid>
